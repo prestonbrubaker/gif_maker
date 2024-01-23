@@ -27,7 +27,7 @@ def create_gif(source_folder, output_file, duration):
 # Define parameters
 source_folder = '../photoset'
 output_file = '../output.gif'
-frame_duration = 200  # Duration for each frame in milliseconds
+frame_duration = 50  # Duration for each frame in milliseconds
 
 # Create the GIF
 create_gif(source_folder, output_file, frame_duration)
