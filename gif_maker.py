@@ -31,5 +31,3 @@ frame_duration = 200  # Duration for each frame in milliseconds
 
 # Create the GIF
 create_gif(source_folder, output_file, frame_duration)
-
-print("GIF created successfully.")
