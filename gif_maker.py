@@ -3,6 +3,10 @@ import os
 
 def create_gif(source_folder, output_file, duration):
     frames = []
+
+    # Sort files based on numeric value assuming file format like 'image1.png', 'image2.png', etc.
+    files = sorted(os.listdir(source_folder), key=lambda x: int(x.split('.')[0].split('_')[-1]))
+
     # Loop through all files in the source folder
     for file_name in sorted(os.listdir(source_folder)):
         if file_name.endswith('.png'):
