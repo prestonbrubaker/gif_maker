@@ -13,8 +13,8 @@ def create_gif(source_folder, output_file, duration):
     frames[0].save(output_file, format='GIF', append_images=frames[1:], save_all=True, duration=duration, loop=0)
 
 # Define parameters
-source_folder = 'photoset'
-output_file = 'output.gif'
+source_folder = '../photoset'
+output_file = '../output.gif'
 frame_duration = 100  # Duration for each frame in milliseconds
 
 # Create the GIF
